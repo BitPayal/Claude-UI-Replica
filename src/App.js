@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+
+import ClaudeSidebar from './components/ClaudeSidebar';
 import './App.css';
+import ClaudeApp from './components/ClaudApp';
+import ClaudeInputArea from './components/ClaudeInputArea';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <ClaudeSidebar /> */}
+    <ClaudeApp />
+    {/* <ClaudeInputArea /> */}
+    </>
+ 
   );
 }
 

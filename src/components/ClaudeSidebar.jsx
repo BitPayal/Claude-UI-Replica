@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Plus,
   ChevronDown,
@@ -12,6 +13,7 @@ const ClaudeSidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const profileRef = useRef(null);
+  const history = useHistory();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -62,7 +64,7 @@ const ClaudeSidebar = () => {
 
         {/* New Chat Button - Centered when closed */}
         <div className="flex justify-center">
-          <button className="w-full flex items-center mx-4 my-3 px-3 py-2 rounded-md hover:bg-[#3e3e3e] transition-colors">
+          <button onClick={() => history.push("/")} className="w-full flex items-center mx-4 my-3 px-3 py-2 rounded-md hover:bg-[#3e3e3e] transition-colors">
             <Plus className="w-5 h-5 flex-shrink-0" />
             {isSidebarOpen && (
               <motion.span
@@ -78,7 +80,7 @@ const ClaudeSidebar = () => {
 
         {/* Navigation - Centered when closed */}
         <div className="flex justify-center">
-        <button className="w-full flex items-center mx-4 my-3 px-3 py-2 rounded-md hover:bg-[#3e3e3e] transition-colors">
+        <button onClick={() => history.push("/chats")} className="w-full flex items-center mx-4 my-3 px-3 py-2 rounded-md hover:bg-[#3e3e3e] transition-colors">
             <MessageCircle className="w-5 h-5 flex-shrink-0" />
             {isSidebarOpen && (
               <motion.span

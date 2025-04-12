@@ -144,7 +144,7 @@ const ClaudeSidebar = () => {
               className="ml-3 overflow-hidden flex-grow"
             >
               <div className="font-semibold text-white whitespace-nowrap">
-                Shashant Kumar
+                Payal Choudhary
               </div>
               <div className="text-xs text-gray-400 whitespace-nowrap">
                 Free plan
@@ -171,12 +171,12 @@ const ClaudeSidebar = () => {
               className="absolute bottom-full mb-2 left-2 w-[19vw] bg-[#1e1e1e] border border-[#333] rounded-xl shadow-lg text-sm z-[10] overflow-visible"
             >
               <div className="px-5 py-3 text-gray-400 border-b border-gray-700 whitespace-nowrap">
-                shashant.sah@gmail.com
+                p7790149@gmail.com
               </div>
 
               <div className="flex items-center px-5 py-3 border-b border-gray-700">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-600 text-white font-semibold mr-3 flex-shrink-0">
-                  SK
+                  PC
                 </div>
                 <div className="overflow-hidden">
                   <div className="text-white font-semibold whitespace-nowrap">

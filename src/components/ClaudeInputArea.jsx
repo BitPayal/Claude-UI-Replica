@@ -129,7 +129,7 @@ const ClaudeUI = () => {
       <div className="flex items-center text-center my-10">
         <div className="text-3xl pr-2">✴️</div>
         <h2 className="text-4xl font-serif text-gray-100">
-          Hi Rishabh, How are you?
+          Hi Payal, How are you?
         </h2>
       </div>
 
